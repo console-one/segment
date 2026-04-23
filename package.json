@@ -1,0 +1,52 @@
+{
+  "name": "@console-one/segment",
+  "version": "0.1.0",
+  "description": "Multi-format composite path grammar — the substrate addressing primitive. One engine walks paths, streams, and cross-regime references via format-tagged transitions.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/console-one/segment.git"
+  },
+  "bugs": {
+    "url": "https://github.com/console-one/segment/issues"
+  },
+  "homepage": "https://github.com/console-one/segment#readme",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run clean && npm run build && npm run smoke",
+    "smoke": "node --enable-source-maps dist/smoke.js"
+  },
+  "keywords": [
+    "grammar",
+    "path",
+    "addressing",
+    "multi-format",
+    "composite-key",
+    "visitor-pattern",
+    "substrate",
+    "lattice"
+  ],
+  "author": "Andrew Chalmers",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.6.0"
+  }
+}
