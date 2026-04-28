@@ -1,7 +1,7 @@
 {
   "name": "@console-one/segment",
-  "version": "0.1.0",
-  "description": "Multi-format composite path grammar \u2014 the substrate addressing primitive. One engine walks paths, streams, and cross-regime references via format-tagged transitions.",
+  "version": "0.1.1",
+  "description": "Multi-format composite path grammar — the substrate addressing primitive. One engine walks paths, streams, and cross-regime references via format-tagged transitions.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/console-one/segment.git"
